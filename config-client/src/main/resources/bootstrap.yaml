@@ -10,6 +10,7 @@ spring:
       label: master
       profile: db
       uri: http://localhost:9200/
+
 #  spring:
 #    profiles: prod
 #

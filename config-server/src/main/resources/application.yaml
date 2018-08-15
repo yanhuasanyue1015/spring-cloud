@@ -9,4 +9,3 @@ spring:
         git:
           search-paths: 'config/{application}'
           uri: https://github.com/yanhuasanyue1015/spring-cloud.git
-      label: master

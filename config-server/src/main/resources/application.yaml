@@ -3,3 +3,9 @@ server:
 spring:
   application:
     name: config-server
+  cloud:
+    config:
+      uri: https://github.com/yanhuasanyue1015/spring-cloud.git
+      server:
+        git:
+          search-paths: config/'{application}'

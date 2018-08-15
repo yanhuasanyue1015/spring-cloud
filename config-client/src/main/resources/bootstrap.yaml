@@ -1,0 +1,24 @@
+server:
+  port: 9300
+spring:
+  application:
+    name: config-client
+
+#---
+  cloud:
+    config:
+      label: master
+      profile: db
+      uri: http://localhost:9200/
+#  spring:
+#    profiles: prod
+#
+#---
+#  cloud:
+#      config:
+#        label: dev
+#        profile: db
+#        uri: http://localhost:9200/
+#  spring:
+#    profiles: dev
+

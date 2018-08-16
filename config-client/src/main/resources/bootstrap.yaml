@@ -11,24 +11,6 @@ spring:
         service-id: config-server
         enabled: true
 
-  kafka:
-    consumer:
-      bootstrap-servers: localhost:9092
-      group-id: user-test-group
-      auto-offset-reset: earliest
-      enable-auto-commit: true
-      auto-commit-interval: 1s
-      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-    producer:
-      retries: 0
-      batch-size: 16384
-      buffer-memory: 33554432
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
-    listener:
-      monitor-interval: 1s
-
 eureka:
   client:
     service-url:

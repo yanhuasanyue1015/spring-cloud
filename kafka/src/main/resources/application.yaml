@@ -1,16 +1,6 @@
-server:
-  port: 9300
 spring:
   application:
-    name: config-client
-  cloud:
-    config:
-      label: master
-      profile: db
-      discovery:
-        service-id: config-server
-        enabled: true
-
+    name: kafka-user
   kafka:
     consumer:
       bootstrap-servers: localhost:9092
@@ -28,9 +18,5 @@ spring:
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
     listener:
       monitor-interval: 1s
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-
+server:
+  port: 10000

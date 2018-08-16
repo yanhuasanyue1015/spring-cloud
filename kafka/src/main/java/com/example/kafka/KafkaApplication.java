@@ -3,7 +3,7 @@ package com.example.kafka;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.example.kafka")
 public class KafkaApplication {
 
     public static void main(String[] args) {

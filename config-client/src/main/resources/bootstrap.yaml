@@ -3,23 +3,15 @@ server:
 spring:
   application:
     name: config-client
-
-#---
   cloud:
     config:
       label: master
       profile: db
-      uri: http://localhost:9200/
-
-#  spring:
-#    profiles: prod
-#
-#---
-#  cloud:
-#      config:
-#        label: dev
-#        profile: db
-#        uri: http://localhost:9200/
-#  spring:
-#    profiles: dev
+      discovery:
+        service-id: config-server
+        enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
 

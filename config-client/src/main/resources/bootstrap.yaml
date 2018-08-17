@@ -10,6 +10,17 @@ spring:
       discovery:
         service-id: config-server
         enabled: true
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+    bus:
+      enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
 
 eureka:
   client:
